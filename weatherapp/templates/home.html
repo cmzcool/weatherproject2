@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome to the Django Weather Service</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+<a href="{% url 'weatherapp:home' %}">Home</a>
+</head>
+
+
+<body>
+
+<div class="header">
+  <img src="static/img/logo.jpeg" alt="logo" />
+  <h1>Welcome to the Django Weather Service</h1>
+</div>
+
+<div class="sidenav">
+  <a href="#">Home</a>
+  <a href="#">About us</a>
+  <a href="#">Customer Feedback</a>
+  <a href="#">The future</a>
+  <a href="#">Weather app</a>
+</div>
+
+<div class="content">
+  <h1>Do the right choice, this is the best weather service!</h1>
+  <h2>Hope all you guys can enjoy this website
+</h2>
+  
+</div> 
+</div>
+
+
+
+</body>
+</html>

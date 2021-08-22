@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome to the Django Weather Service</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+<a href="{% url 'weatherapp:aboutus' %}">About us</a>
+
+</head>
+
+
+<body>
+
+<div class="header">
+  <img src="static/img/logo.jpeg" alt="logo" />
+  <h1>Welcome to the Django Weather Service</h1>
+</div>
+
+<div class="sidenav">
+  <a href="#">Home</a>
+  <a href="#">About us</a>
+  <a href="#">Customer Feedback</a>
+  <a href="#">The future</a>
+  <a href="#">Weather app</a>
+</div>
+
+<div class="content">
+  <h1>About us</h1>
+  <h2>My website just built up on 21th of Ausust. I build up this website is going to help people find a way to compare weather in the whole world.
+</h2>
+  <h3>The method to use this website: find the geographic location that you are interested in, and then type in the location. After press the submit button, you will know the max and min temperature, and humidity at that place.
+  </h3>
+</div> 
+</div>
+
+
+
+</body>
+</html>

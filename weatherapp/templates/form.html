@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Django Weather Services Application</title>
+    <h3>Django Weather Services Application</h3>
+    <div id="top_menu">
+        <a href="home.html">Home</a> |
+        <a href="./weatherapp">Weather App</a> |
+        <a href="aboutus.html">About</a> |
+        <a href="feedback.html">Customer Feedback</a> |
+        <a href="thefuture.html">Future</a>
+   </div>
+</head>
+<body>
+ <form method="post">
+  {% csrf_token %}
+     <br>
+  {{form}}
+     <br>
+<!--     <label for="latitude">Latitude:</label>-->
+<!--     <input id="latitude" name="latitude" type="number" step="0.0001"/><br>-->
+<!--     <label for="longitude">Longitude:</label>-->
+<!--     <input id="longitude" name="longitude" type="number" step="0.0001" /><br>-->
+     <button type="submit">Submit</button><br><br>
+     <label>Latitude:</label>
+     {{latitude}}<br>
+     <label>Longitude:</label>
+     {{longitude}}<br>
+     <label>Min Temperature in Celcius:</label>
+     {{temp_min}}<br>
+     <label>Max Temperature in Celcius:</label>
+     {{temp_max}}<br>
+     <label>Wind Speed m/s:</label>
+     {{wind_speed}}<br>
+     <label>Humidity %:</label>
+     {{humidity}}<br>
+     <label>Description:</label>
+     {{description}}<br>
+     <label>City:</label>
+     {{city}}<br>
+ </form>
+
+</body>
+</html>
